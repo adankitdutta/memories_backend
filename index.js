@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
 import postRoutes from "./routes/posts.js";
+import userRoutes from "./routes/user.js";
 import dotenv from "dotenv";
 
 const app=express();
@@ -17,6 +18,8 @@ app.get('/',(req,res)=>
     res.send("Hello to memories API");
 })
 app.use('/posts',postRoutes);
+
+app.use('/user',userRoutes);
 
 //const CONNECTION_URL="mongodb+srv://admin-ankit:test1234@cluster0.n7kuh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
