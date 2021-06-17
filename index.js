@@ -21,7 +21,6 @@ app.use('/posts',postRoutes);
 
 app.use('/user',userRoutes);
 
-//const CONNECTION_URL="mongodb+srv://admin-ankit:test1234@cluster0.n7kuh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 const PORT= process.env.PORT || 5000;
 
